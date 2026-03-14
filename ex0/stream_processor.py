@@ -1,14 +1,14 @@
 # ************************************************************************* #
 #                                                                           #
 #                                                      :::      ::::::::    #
-# stream_processor.py                                :+:      :+:    :+:    #
+#  stream_processor.py                               :+:      :+:    :+:    #
 #                                                  +:+ +:+         +:+      #
-# By: asulon <asulon@student.42nice.fr>          +#+  +:+       +#+         #
+#  By: asulon <asulon@student.42nice.fr>         +#+  +:+       +#+         #
 #                                              +#+#+#+#+#+   +#+            #
-# Created: 2026/03/09 20:12:48 by asulon            #+#    #+#              #
-# Updated: 2026/03/09 20:12:49 by asulon           ###   ########.fr        #
+#  Created: 0026/03/09 20:12:48 by sulon           #+#    #+#               #
+#  Updated: 2026/03/13 15:49:17 by asulon          ###   ########.fr        #
 #                                                                           #
-# ************************************************************************ #
+# ************************************************************************* #
 
 from typing import Any, List, Dict, Union, Optional
 from abc import ABC, abstractmethod
