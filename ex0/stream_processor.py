@@ -6,11 +6,11 @@
 #  By: asulon <asulon@student.42nice.fr>         +#+  +:+       +#+         #
 #                                              +#+#+#+#+#+   +#+            #
 #  Created: 0026/03/09 20:12:48 by sulon           #+#    #+#               #
-#  Updated: 2026/03/13 15:49:17 by asulon          ###   ########.fr        #
+#  Updated: 2026/03/15 16:44:32 by asulon          ###   ########.fr        #
 #                                                                           #
 # ************************************************************************* #
 
-from typing import Any, List, Dict, Union, Optional
+from typing import Any, List
 from abc import ABC, abstractmethod
 
 
@@ -85,9 +85,9 @@ class LogProcessor(DataProcessor):
             status = "[ALERT]"
         elif "INFO" in result:
             status = "[INFO]"
-        return super().format_output((f"{status} {result.split(":")[0]} "
+        return super().format_output((f"{status} {result.split(':')[0]} "
                                       "level detected:"
-                                      f"{result.split(":")[1]}"))
+                                      f"{result.split(':')[1]}"))
 
 
 def main():
@@ -140,10 +140,10 @@ def main():
 
     index += 1
     x = TextProcessor()
-    print(f"Result {index}: {x.validate("Hello world")}")
+    print(f"Result {index}: {x.validate('Hello world')}")
     index += 1
     x = LogProcessor()
-    print(f"Result {index}: {x.format_output("INFO: System ready")}")
+    print(f"Result {index}: {x.format_output('INFO: System ready')}")
 
 
 if __name__ == "__main__":
